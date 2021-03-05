@@ -1,0 +1,53 @@
+body {
+    /* font-family: 'gilroy'; */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    position: relative;
+    background-color: #fff;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.title {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background-color: #0000ff;
+    color: #ffffff;
+}
+
+::selection {
+    text-shadow: none;
+    background-color: #0000ff;
+    color: #ffffff;
+}
+
+.page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page__main{
+    flex-grow: 1;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 800px;
+    min-width: 320px;
+    width: 100%;
+    padding: 0 22px;
+}
+/* ================================ */
