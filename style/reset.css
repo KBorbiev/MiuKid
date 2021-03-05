@@ -393,7 +393,7 @@ input[type='range']::-ms-fill-upper {
     object-fit: contain;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'gilroy';
     src: url('fonts/gilroy-medium.ttf');
     font-weight: 500;
@@ -403,5 +403,5 @@ input[type='range']::-ms-fill-upper {
     font-family: 'gilroy';
     src: url('fonts/gilroy-bold.ttf');
     font-weight: 700;
-}
+} */
 

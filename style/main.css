@@ -1,5 +1,5 @@
 body {
-    /* font-family: 'gilroy'; */
+    font-family: 'Roboto', sans-serif;;
     font-size: 16px;
     line-height: 1.5;
     color: #000000;
@@ -45,9 +45,114 @@ a {
 
 .wrapper {
     margin: auto;
-    max-width: 800px;
+    max-width: 1250px;
     min-width: 320px;
     width: 100%;
-    padding: 0 22px;
+    padding: 0 15px;
 }
 /* ================================ */
+.header__top {
+    background-color: #F7F7F7;
+}
+.header__top-nav {
+    display: flex;
+    align-items: baseline;
+    color: #4E4B64;
+    padding-bottom: 10px;
+}
+.sms-default {
+    margin-right: 99px;
+}
+.sms-default .fa-microphone:before {
+    padding-right: 15px;
+}
+.gift {
+    position: relative;
+}
+.gift::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 130%;
+    background: #DDDDDD;
+    top: 50%;
+    left: -20px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.gift .fa-gift:before {
+    padding-right: 5px;
+    font-size: 20px;
+}
+.gift .count {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    top: -9px;
+    left: 8px;
+    background-color: #E03659;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    z-index: 2;
+}
+
+
+/* =========== */
+.select-box {
+    align-items: baseline;
+    justify-content: flex-end;
+    padding-top: 14px;
+}
+.select-lang {
+    padding-right: 17px;
+}
+.select-currency,
+.select-lang {
+    align-items: baseline;
+}
+
+.select-currency .fa-money-bill-alt,
+.select-lang .fa-language {
+    padding-right: 10px;
+}
+
+.select-currency select,
+.select-lang select {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    padding-left: 0;
+    width: 57px;
+    font-weight: 600;
+}
+.select-currency {
+    position: relative;
+}
+.select-currency::before,
+.select-currency::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    background: #DDDDDD;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.select-currency::before {
+    left: -10px;
+}
+.select-currency::after {
+    right: -10px;
+}
+
+.sign-registr {
+    padding-left: 25px;
+    text-decoration: underline;
+}
