@@ -16,6 +16,17 @@ body {
     font-weight: 600;
 }
 
+.circle {
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -45,7 +56,7 @@ a {
 
 .wrapper {
     margin: auto;
-    max-width: 1250px;
+    max-width: 1200px;
     min-width: 320px;
     width: 100%;
     padding: 0 15px;
@@ -155,4 +166,44 @@ a {
 .sign-registr {
     padding-left: 25px;
     text-decoration: underline;
+}
+
+
+/* ========mid header========== */
+
+.header__logo .logo {
+    width: 146px;
+    padding-top: 18px;
+}
+.hd-item {
+    padding-top: 38px;
+}
+.hd-item-left {
+    float: left;
+    margin-right: 10px;
+}
+.hd-item-right {
+    display: inline-block;
+}
+.hd-item-right p {
+    padding-top: 7px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0.9;
+}
+.hd-item-right span {
+    font-size: 14px;
+}
+.hd-item-right span .mark {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.schedule .mark {
+    color: #e53556;
+}
+.week-sales .mark {
+    color: #fc3;
+}
+.questions .mark {
+    color: #7cd0f5;
 }
