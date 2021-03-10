@@ -5,15 +5,45 @@ body {
     color: #000000;
     position: relative;
     background-color: #fff;
+    min-height: 1000px;
 }
 
 .d-flex {
     display: flex;
 }
 
-.title {
-    font-size: 27px;
-    font-weight: 600;
+.sections-title {
+    font-family: 'Poppins', sans-serif;
+    color: #4c4b6c;
+    font-weight: 500;
+    font-size: 36px;
+}
+.view-products {
+    font-size: 14px;
+    margin-right: 140px;
+    position: relative;
+    padding-top: 15px;
+    display: inline-block;
+    line-height: 1;
+}
+.view-products > .fa-angle-right {
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    font-size: 14px;
+    background: #4c4b6c;
+    border-radius: 50%;
+    color: #fff;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.text-a-r {
+    text-align: right;
 }
 
 .circle {
@@ -63,6 +93,9 @@ a {
     padding: 0 15px;
 }
 /* ================================ */
+.header {
+    margin-bottom: 30px;
+}
 .header__top {
     background-color: #F7F7F7;
 }
@@ -286,6 +319,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     min-width: 700px;
+    background-color: #fff;
 }
 .sub-menu.images {
     min-width: 900px;
@@ -309,7 +343,7 @@ a {
 }
 .main-menu__link:hover + .sub-menu  {
     opacity: 1;
-    z-index: 1;
+    z-index: 5;
 }
 .sub-menu {
     opacity: 0;
@@ -320,10 +354,11 @@ a {
     padding: 20px 0 0 30px;
     box-shadow: 0px 5px 11.88px 0.12px rgb(0 0 0 / 10%);
     transition: opacity .25s ease;
+    background-color: #fff;
 }
 .sub-menu:hover {
     opacity: 1;
-    z-index: 1;
+    z-index: 5;
 }
 .sub-menu > ul {
     display: flex;
@@ -499,4 +534,159 @@ a {
 }
 .search-form input:hover:-moz-placeholder { /* Firefox 18- */
     color: #000;
+}
+
+
+/* === featured ==== */
+
+.featured {
+    padding-top: 13px;
+}
+.featured__top {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 12px;
+}
+.featured__item {
+    position: relative;
+    overflow: hidden;
+    min-height: 310px;
+}
+.featured__item:hover .quick-show {
+    opacity: 1;
+    z-index: 2;
+}
+.featured__item:hover .reviews,
+.featured__item:hover .rating {
+    display: none;
+}
+.featured__item:hover .featured__item-btn {
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+.featured__item-top {
+    position: relative;
+}
+
+.quick-show {
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+    z-index: 1;
+    transform: translateX(-50%);
+    color: #888;
+    font-size: 13px;
+    z-index: -1;
+    opacity: 0;
+    transition: transform .25s, opacity .25s ease;
+}
+.quick-show:hover {
+    transform: scale(1.1) translateX(-50%);;
+}
+
+.ribbon {
+    position: absolute;
+    top: 9px;
+    right: 3px;
+    z-index: 1;
+    padding: 3px 6px;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: #999;
+    color: #fff;
+}
+.ribbon.new {
+    background-color: #abcd02;
+}
+.ribbon::after {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 99%;
+    left: 7px;
+    border-bottom: 10px solid transparent;
+    border-left: 8px solid #999;
+}
+.new::after {
+    border-left: 8px solid #abcd02;
+}
+.ribbon.sales {
+    background-color: #fdc140;
+}
+.ribbon::after {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 99%;
+    left: 7px;
+    border-bottom: 10px solid transparent;
+}
+.sales::after {
+    border-left: 8px solid #fdc140;
+}
+
+.featured__item-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.featured__item-info {
+    font-weight: 300;
+    color: #4c4b6c;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-bottom: 2px;
+    width: 100%;
+}   
+
+.featured__item-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    z-index: -1;
+    transform: translate(-50%, 100px);
+    transition: transform .25s ease;
+}
+.featured__item-btn li {
+    margin: 0 3px;
+}
+.featured__item-btn a:hover .fa {
+    background-color: #7cd0f5;
+    color: #fff;
+}
+.reviews {
+    font-size: 13px;
+    color: #888895;
+}
+.price {
+    color: #999;
+    font-size: 14px;
+}
+.price__actual {
+    color: #4c4b6c;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.rating {
+    display: flex;
+    margin-right: 10px;
+}
+.rating li {
+    font-size: 8px;
+    color: #fc3;
+}
+
+.nav-featured {
+    position: absolute;
+    top: -96px;
+    right: 0;
+}
+
+.nav-featured button {
+    margin: 0 0 0 5px;
 }
