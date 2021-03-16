@@ -9,6 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
         dots: false,
         navContainerClass: 'owl-nav nav-featured',
         navText: ["<span class='fa fa-angle-left circle'></span>", "<span class='fa fa-angle-right circle'></span>"],
+        responsive:{
+            1200:{
+                items: 5,
+            },
+            768: {
+                items: 3
+            }
+        }
     });
 });
 

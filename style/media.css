@@ -1,0 +1,60 @@
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        outline: 1px solid red;
+    }
+    .header__top {
+        margin-bottom: 20px;
+    }
+    .sms-default {
+        margin-right: 30px;
+    }
+    .select-currency ,
+    .select-lang {
+        display: none;
+    }
+    .hd-item {
+        padding-top: 18px;
+    }
+    .main-menu > ul {
+        padding: 0;
+    }
+    .main-menu__item {
+        padding-top: 8px;
+    }
+    .main-menu__link {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 15px;
+        letter-spacing: normal;
+    }
+    .search-box {
+        display: none;
+    }
+    .cart__basket {
+        left: -50px;
+    }
+    .sub-menu.images {
+        left: -135px;
+        min-width: 500px;
+        padding: 15px 15px 5px;
+    }
+
+    .featured__item {
+        min-height: 325px;
+        box-shadow: 0px 0px 25px -14px rgb(10 93 130);
+        margin-bottom: 20px;
+        border-radius: 12px;
+        padding: 0px 5px;
+    }
+    .featured__item-btn {
+        bottom: 8px;
+    }
+    .featured__item-btn li {
+        margin: 0 10px;
+    }
+    .featured__item-btn .circle {
+        width: 40px;
+        height: 40px;
+        box-shadow: 0px 4px 9px -5px rgb(12 81 112 / 70%);
+    }
+}
