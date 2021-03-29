@@ -547,6 +547,9 @@ a {
     border-bottom: 1px solid #dedede;
     padding-bottom: 12px;
 }
+.featured__bottom {
+    margin-bottom: 7px;
+}
 .featured__item {
     position: relative;
     overflow: hidden;
@@ -690,3 +693,4 @@ a {
 .nav-featured button {
     margin: 0 0 0 5px;
 }
+
