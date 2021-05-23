@@ -1,0 +1,56 @@
+[
+    {
+        "id": 0,
+        "name": "test0",
+        "img": "/uploads/img61.jpg",
+        "price": 32.5,
+        "oldPrice": 42.42,
+        "stars": 5,
+        "ribon": "new"
+    },
+    {
+        "id": 1,
+        "name": "test1",
+        "img": "/uploads/img61.jpg",
+        "price": 75.22,
+        "oldPrice": 165.32,
+        "stars": 6,
+        "ribon": "sales"
+    },
+    {
+        "id": 2,
+        "name": "test2",
+        "img": "/uploads/img61.jpg",
+        "price": 56,
+        "oldPrice": 95.12,
+        "stars": 7,
+        "ribon": "new"
+    },
+    {
+        "id": 3,
+        "name": "test3",
+        "img": "/uploads/img61.jpg",
+        "price": 32.5,
+        "oldPrice": 42.42,
+        "stars": 5,
+        "ribon": "new"
+    },
+    {
+        "id": 4,
+        "name": "test4",
+        "img": "/uploads/img61.jpg",
+        "price": 75.22,
+        "oldPrice": 165.32,
+        "stars": 6,
+        "ribon": "sales"
+    },
+    {
+        "id": 5,
+        "name": "test5",
+        "img": "/uploads/img61.jpg",
+        "price": 56,
+        "oldPrice": 95.12,
+        "stars": 7,
+        "ribon": "new"
+    }
+]
